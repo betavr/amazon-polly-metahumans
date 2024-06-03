@@ -29,6 +29,8 @@ Aws::Polly::Model::VoiceId ToPollyVoiceId(const EVoiceId VoiceId)
 {
     switch (VoiceId)
     {
+    case EVoiceId::Carmen:
+        return Aws::Polly::Model::VoiceId::Carmen;
     case EVoiceId::Nicole:
         return Aws::Polly::Model::VoiceId::Nicole;
     case EVoiceId::Russell:
